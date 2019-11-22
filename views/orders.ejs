@@ -18,25 +18,7 @@
 
         <!-- LOCAL INFORMATION -->
         <div class="col-sm-6">
-            <div class="well">
-                <h3><span class="fa fa-user"></span> Local</h3>
-
-                <% if (user.local.email) { %>
-                    <p>
-                        <strong>id</strong>: <%= user._id %><br>
-                        <strong>email</strong>: <%= user.local.email %><br>
-                        <strong>password</strong>: <%= user.local.password %>
-                    </p>
-
-                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
-                <% } else { %>
-                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
-                <% } %>
-
-            </div>
-        </div>
-        <div class="col-sm-6">
-          <h3>Completed</h3>
+            <h3>Completed</h3>
           <ul class="messages">
           <% for(var i=0; i<orders.length; i++) {%>
            <% if (orders[i].complete === true){%>
@@ -47,6 +29,9 @@
           <% } %>
           <% } %>
           </ul>
+        </div>
+        <div class="col-sm-6">
+          
           <form action="completeorder" method="POST">
           <h3>Not Completed</h3>
           <ul class="messages">
