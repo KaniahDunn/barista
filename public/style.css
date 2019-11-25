@@ -2,6 +2,9 @@ body{
   padding-top:80px;
   word-wrap:break-word;
   background-image: url("img/cafe.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 img{
   height: 200px;
@@ -9,5 +12,5 @@ img{
 .mainSec{
   border-radius: 2%;
   margin-top: 2%;
-  background-color: white;
+  background-color: grey;
 }
