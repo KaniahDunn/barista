@@ -1,7 +1,13 @@
 body{
   padding-top:80px;
   word-wrap:break-word;
+  background-image: url("img/cafe.jpeg");
 }
 img{
   height: 200px;
+}
+.mainSec{
+  border-radius: 2%;
+  margin-top: 2%;
+  background-color: white;
 }
